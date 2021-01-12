@@ -32,7 +32,7 @@ Contains all redux-specific files, such as slices, reducers and your redux store
 This file is the _template_ for your application. With some webpack plugins that are setup for the application, this file will be transformed into bundled .html file that your application will render. The bundled .html file lives in `./app/dist/`.
 
 #### index-prod.html
-Identical to **index.html**, but used when bundling your app for production. This file is different from local development because we use the [`<base>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base) tag to load resources over a non-file:/// origin because [it is more secure](https://github.com/reZach/secure-electron-template/issues/2).
+Identical to **index.html**, but used when bundling your app for production. This file is different from local development because we use the [`<base>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base) tag to load resources over a non-file:/// origin because [it is more secure](https://github.com/sbalci/securElectron/issues/2).
 
 #### index.jsx
 The [entry point](https://webpack.js.org/concepts/entry-points/) of your application where webpack generates your application bundle code from. You likely won't need to touch this file at all, but it's important to know what it's there for.

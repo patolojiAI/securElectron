@@ -8,7 +8,7 @@ class Welcome extends React.Component {
     return (
       <div id="welcome">
         <h1 className="header">
-          Thank you for trying out the secure-electron-template!
+          Thank you for trying out the securElectron!
         </h1>
         <div>
           <Link to={ROUTES.MOTD}>View a sample of using the store.</Link><br />

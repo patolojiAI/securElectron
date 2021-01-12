@@ -21,4 +21,4 @@ A folder that will holds localized files of translations for your app. This setu
 > Note, there may be limited support for i18next plugins that implement secure practices! I wouldn't be surprised if most of them didn't work with this template! You might just have to write your own, like I did!
 
 #### src
-Application-specific files, these are your js/css files and everything else you are used to. A more detailed look of this directory is [here](https://github.com/reZach/secure-electron-template/blob/master/docs/src.md).
+Application-specific files, these are your js/css files and everything else you are used to. A more detailed look of this directory is [here](https://github.com/sbalci/securElectron/blob/master/docs/src.md).

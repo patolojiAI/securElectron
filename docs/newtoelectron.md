@@ -14,7 +14,7 @@ Electron provides these features through Node through [`require`](https://nodejs
 ## How do I import modules into my app?
 You _used_ to (and still can, but it's **not** recommended) use Node modules with the electron [`remote`](https://www.electronjs.org/docs/api/remote) api, but [it's not very secure](https://github.com/electron/electron/issues/9920#issuecomment-575839738). Beginning with [electron v5](https://www.electronjs.org/docs/breaking-changes#planned-breaking-api-changes-50) (which was released in April 24, 2019), the team recommended to use a different architecture to make use of these Node modules. This is IPC, inter-process communication.
 
-![ipc](https://github.com/reZach/secure-electron-template/blob/master/docs/imgs/ipc.png "How IPC works")
+![ipc](https://github.com/sbalci/securElectron/blob/master/docs/imgs/ipc.png "How IPC works")
 
 ## How does IPC work
 IPC in itself doesn't _do_ anything, it simply allows you to send messages between the main and renderer processes. The idea behind IPC is that your **main** process controls and loads Node apis, while your **renderer** process tells the main process whenever it needs to use something that calls a Node api.
@@ -203,4 +203,4 @@ In other terms, because we use `contextBridge.exposeInMainWorld`, our renderer p
 ## Wrapping up
 With these details, I hope I have explained the basics of electron to you and given you a quick run-down on how to _correctly_ set up a **secure** electron app [when you'd like to use Node apis]. You should be well on your way to developing the next killer app!
 
-In case you were looking for a good starting point, this template [`secure-electron-template`](https://github.com/reZach/secure-electron-template) has the security features (and more!) we just described built-in. There are plenty of comments in the template describing these, and more, security enhancements. Check us out today!
+In case you were looking for a good starting point, this template [`securElectron`](https://github.com/sbalci/securElectron) has the security features (and more!) we just described built-in. There are plenty of comments in the template describing these, and more, security enhancements. Check us out today!
