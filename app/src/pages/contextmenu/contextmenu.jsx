@@ -23,7 +23,7 @@ class ContextMenu extends React.Component {
   componentDidMount() {
     // Set up binding in code whenever the context menu item
     // of id "alert" is selected
-    window.api.contextMenu.onReceive("loudAlert", function(args) {
+    window.api.contextMenu.onReceive("loudAlert", function (args) {
       alert(
         `This alert was brought to you by secure-electron-context-menu by ${args.attributes.name}`
       );
@@ -41,7 +41,7 @@ class ContextMenu extends React.Component {
         </Link>
         <div>
           <div className="contextmenu" cm-template="loudAlertTemplate"
-            cm-payload-name="reZach">Context menu</div>
+            cm-payload-name="sbalci">Context menu</div>
           <div
             className="italic">
             right-click me!
